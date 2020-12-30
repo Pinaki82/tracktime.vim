@@ -15,7 +15,7 @@ endfunc
 com! TimeSpentEditing echo TimeSpentEditing()
 map <silent> <leader>dt :TimeSpentEditing<CR>
 
-:amenu Plugin.Time\ Spent\ on\ Editing : TimeSpentEditing <CR><Esc><CR>
+:amenu Plugin.Time\ Spent\ on\ Editing\ (\Leader-dt\ or\ :TimeSpentEditing\) : TimeSpentEditing <CR><Esc><CR>
 
 if g:osdetected == "Windows"
     :tmenu icon=$HOME/\.vim/bitmaps/clock.bmp 1.470 ToolBar.TimeSpentEditing Time Spent on Editing
